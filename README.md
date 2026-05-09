@@ -10,7 +10,7 @@
 
 **Upload any PDF → AI extracts claims → Live web verification → Instant fact-check report**
 
-[Live Demo](#) · [Report Bug](#) · [API Docs](#api-endpoints)
+[Live Demo]((https://truth-layer-agent.vercel.app) · [Backend API](https://truth-layer-agent.onrender.com) · [API Docs](#api-endpoints)) · [Report Bug](#) · [API Docs](#api-endpoints)
 
 </div>
 
