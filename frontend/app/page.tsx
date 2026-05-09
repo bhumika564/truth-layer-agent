@@ -32,7 +32,7 @@ export default function Home() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("https://truth-layer-agent.onrender.com/fact-check", {
+      const response = await fetch("https://truth-layer-agent.onrender.com", {
         method: "POST",
         body: formData,
       });
