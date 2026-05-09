@@ -10,7 +10,7 @@
 
 **Upload any PDF → AI extracts claims → Live web verification → Instant fact-check report**
 
-[Live Demo](https://truth-layer-agent.vercel.app) · [Backend API](https://truth-layer-agent.onrender.com) · [Report Bug](https://github.com/bhumika564/truth-layer-agent/issues) · [API Docs](#-api-endpoints)
+[Live Demo](https://truth-layer-agent.vercel.app) · [Backend API](https://truth-layer-agent.onrender.com) · [API Docs](#-api-endpoints)
 
 </div>
 
@@ -19,6 +19,7 @@
 ## 📌 Table of Contents
 
 - [Overview](#-overview)
+- [Live Deployment Links](#-live-deployment-links)
 - [Features](#-features)
 - [System Architecture](#-system-architecture)
 - [Tech Stack](#-tech-stack)
@@ -38,6 +39,16 @@
 1. **Extracts** all verifiable claims (stats, dates, financial figures, technical data) from any uploaded PDF
 2. **Verifies** each claim against live web sources using AI-powered search
 3. **Reports** each claim as `✅ Verified`, `⚠️ Inaccurate`, or `❌ False` — with confidence scores and reasoning
+
+---
+
+## 🚀 Live Deployment Links
+
+| | Link |
+|---|---|
+| **🌐 Frontend (Vercel)** | [https://truth-layer-agent.vercel.app](https://truth-layer-agent.vercel.app) |
+| **⚙️ Backend (Render)** | [https://truth-layer-agent.onrender.com](https://truth-layer-agent.onrender.com) |
+| **📂 GitHub Repository** | [https://github.com/bhumika564/truth-layer-agent](https://github.com/bhumika564/truth-layer-agent) |
 
 ---
 
