@@ -10,14 +10,19 @@ import {
 export default function Home() {
   const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
+  const [uploadSuccess, setUploadSuccess] = useState(false);
   const [results, setResults] = useState<any[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setFile(e.target.files[0]);
-    }
-  };
+  if (e.target.files && e.target.files[0]) {
+    setFile(e.target.files[0]);
+    setUploadSuccess(true); // Success message on selection
+    
+    
+    setTimeout(() => setUploadSuccess(false), 3000);
+  }
+};
 
   const handleUpload = async () => {
     if (!file) {
@@ -140,6 +145,12 @@ export default function Home() {
                     onChange={handleFileChange}
                     className="block w-full text-xs text-gray-400 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-white/10 file:text-purple-300 hover:file:bg-white/20 cursor-pointer"
                   />
+                  {uploadSuccess && (
+  <div className="mt-2 flex items-center gap-2 text-green-400 text-xs font-medium animate-bounce">
+    <CheckCircle2 size={14} />
+    File uploaded successfully!
+  </div>
+                  )}
                 </div>
               </div>
               
